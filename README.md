@@ -12,3 +12,9 @@ Steps so far:
 4. Create src/admin folder
 5. Add index.html and config.yml files to src/admin per netlify cms docs.
 6. Initialize netlify project and deploy.
+7. Update src/admin/index.html to include the Auth widget.
+8. Netlify -> Enable Identity.
+9. Netlify -> Enable Git Gateway
+10. Add User
+11. Update src/admin/index.html to include the Auth widget.
+12. Received invite. Had to modify the link a bit. not adding the /admin in there.

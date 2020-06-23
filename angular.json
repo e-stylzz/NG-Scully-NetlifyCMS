@@ -27,7 +27,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/admin",
-              "src/.netlify"
+              // "src/.netlify",
+              "src/templates"
             ],
             "styles": ["src/styles.scss"],
             "scripts": []
