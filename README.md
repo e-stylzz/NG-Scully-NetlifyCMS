@@ -18,3 +18,7 @@ Steps so far:
 10. Add User
 11. Update src/admin/index.html to include the Auth widget.
 12. Received invite. Had to modify the link a bit. not adding the /admin in there.
+13. Create an src/templates (or whatever) folder and include confirmation.html, invitation.html, recovery.html, email-change.html (or whatever you want).
+14. Add this folder to angular.json assets array (same as earlier step 3)
+15. Update Netlify Identity settings to use these files for the repsective email templates. Example templates can be found in this doc:
+    https://community.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690
