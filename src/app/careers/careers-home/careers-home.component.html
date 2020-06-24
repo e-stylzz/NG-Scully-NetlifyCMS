@@ -4,7 +4,7 @@
     *ngFor="let job of jobs$ | async"
     [routerLink]="[job.route]"
   >
-    <h1>{{ job.title }} - {{ job.route }}</h1>
+    <h1>{{ job.position }} - {{ job.route }}</h1>
 
     <p>
       {{ job.requirements }}

@@ -4,11 +4,14 @@ export const config: ScullyConfig = {
   projectName: 'NG-Scully-NetlifyCMS',
   outDir: './dist/static',
   routes: {
-    '/jobs/:title': {
+    '/jobs/:position': {
       type: 'contentFolder',
       title: {
         folder: './jobs',
       },
+    },
+    '/jobs': {
+      type: 'router',
     },
     // '/jobs/:slug': {
     //   type: 'contentFolder',
