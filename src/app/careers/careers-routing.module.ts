@@ -9,7 +9,7 @@ const routes: Routes = [
     component: CareersHomeComponent,
   },
   {
-    path: ':title',
+    path: ':slug',
     component: JobDetailsComponent,
   },
 ];
