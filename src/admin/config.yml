@@ -30,6 +30,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Job"
     folder: "jobs"
     create: true
+    slug: "{{position}}-{{location}}"
     fields:
       - {
           label: "Location",
@@ -54,6 +55,11 @@ collections: # A list of collections the CMS should be able to edit
           name: "requirements",
           widget: "string",
           required: true,
+        }
+        {
+          label: "Job Description",
+          name: "body",
+          widget: "markdown"
         }
       - {
           label: "Responsibilities",
