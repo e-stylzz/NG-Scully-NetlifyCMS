@@ -1,8 +1,20 @@
 import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
-  projectRoot: "./src",
-  projectName: "NG-Scully-NetlifyCMS",
+  projectRoot: './src',
+  projectName: 'NG-Scully-NetlifyCMS',
   outDir: './dist/static',
   routes: {
-  }
+    '/jobs/:title': {
+      type: 'contentFolder',
+      title: {
+        folder: './jobs',
+      },
+    },
+    // '/jobs/:slug': {
+    //   type: 'contentFolder',
+    //   slug: {
+    //     folder: './jobs',
+    //   },
+    // },
+  },
 };

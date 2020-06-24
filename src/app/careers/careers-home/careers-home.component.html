@@ -1,0 +1,15 @@
+<div class="blog">
+  <div
+    class="article"
+    *ngFor="let jobs of jobs$ | async"
+    [routerLink]="[job.route]"
+  >
+    <h1>{{ job.title }} - {{ job.route }}</h1>
+
+    <p>
+      {{ job.requirements }}
+    </p>
+
+    <button>Apply</button>
+  </div>
+</div>
