@@ -56,10 +56,11 @@ collections: # A list of collections the CMS should be able to edit
           widget: "string",
           required: true,
         }
-        {
+      - {
           label: "Job Description",
           name: "body",
-          widget: "markdown"
+          widget: "markdown",
+          required: true,
         }
       - {
           label: "Responsibilities",
