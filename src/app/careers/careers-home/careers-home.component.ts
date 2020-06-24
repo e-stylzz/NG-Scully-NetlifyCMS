@@ -9,9 +9,12 @@ import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 })
 export class CareersHomeComponent implements OnInit {
   jobs$ = this.srs.available$.pipe(
-    map((routeList) =>
-      routeList.filter((route: ScullyRoute) => route.route.startsWith(`/jobs/`))
-    )
+    map((routeList) => {
+      console.log('Test: ', routeList);
+      routeList.filter((route: ScullyRoute) =>
+        route.route.startsWith(`/jobs/`)
+      );
+    })
   );
 
   constructor(private srs: ScullyRoutesService) {}
