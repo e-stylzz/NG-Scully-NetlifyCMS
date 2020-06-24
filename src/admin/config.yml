@@ -26,3 +26,39 @@ collections: # A list of collections the CMS should be able to edit
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "careers"
+    label: "Job"
+    folder: "jobs"
+    create: true
+    fields:
+      - {
+          label: "Location",
+          name: "location",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Overview",
+          name: "overview",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Job Title",
+          name: "position",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Requirements",
+          name: "requirements",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Responsibilities",
+          name: "responsibilities",
+          widget: "string",
+          required: true,
+        }
+      - { label: "Status", name: "status", widget: "string", required: true }
