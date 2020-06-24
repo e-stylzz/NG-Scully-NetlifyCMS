@@ -10,9 +10,6 @@ export const config: ScullyConfig = {
         folder: './jobs',
       },
     },
-    '/jobs': {
-      type: 'router',
-    },
     // '/jobs/:slug': {
     //   type: 'contentFolder',
     //   slug: {
