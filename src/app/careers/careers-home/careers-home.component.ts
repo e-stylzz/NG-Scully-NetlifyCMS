@@ -8,7 +8,7 @@ import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
   styleUrls: ['./careers-home.component.scss'],
 })
 export class CareersHomeComponent implements OnInit {
-  blogs$ = this.srs.available$.pipe(
+  jobs$ = this.srs.available$.pipe(
     map((routeList) =>
       routeList.filter((route: ScullyRoute) => route.route.startsWith(`/jobs/`))
     )
