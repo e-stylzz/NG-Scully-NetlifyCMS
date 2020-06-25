@@ -1,0 +1,25 @@
+.cursor {
+  cursor: pointer;
+}
+
+nav {
+  margin-left: 25px;
+}
+
+nav span {
+  margin-right: 25px;
+}
+
+nav span:hover {
+  font-size: 22px;
+}
+
+.company {
+  font-size: 24px;
+  font-family: fantasy;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 50px auto;
+}

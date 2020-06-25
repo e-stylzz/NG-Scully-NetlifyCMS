@@ -1,15 +1,5 @@
-<div class="blog">
-  <div
-    class="article"
-    *ngFor="let job of jobs$ | async"
-    [routerLink]="[job.route]"
-  >
-    <h1>{{ job.position }} - {{ job.route }}</h1>
-
-    <p>
-      {{ job.requirements }}
-    </p>
-
-    <button>Apply</button>
-  </div>
+<div class="job" *ngFor="let job of jobs$ | async" [routerLink]="[job.route]">
+  <h1>{{ job.position }}</h1>
+  <p>{{ job.requirements }}</p>
+  <p>{{ job.body }}</p>
 </div>
