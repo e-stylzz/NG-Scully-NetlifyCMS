@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, ROUTES } from '@angular/router';
+import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
+import { map } from 'rxjs/operators';
 
 declare var ng: any;
 
@@ -11,7 +13,22 @@ declare var ng: any;
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class JobDetailsComponent implements OnInit {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  jobId = this.route.snapshot.paramMap.get('slug');
+  jobRoute = '/jobs/' + this.jobId;
+
+  job$ = this.srs.available$.pipe(
+    map((routeList) =>
+      routeList.filter((route: ScullyRoute) =>
+        route.route.startsWith(this.jobRoute)
+      )
+    )
+  );
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private srs: ScullyRoutesService
+  ) {}
 
   ngOnInit(): void {}
 }
