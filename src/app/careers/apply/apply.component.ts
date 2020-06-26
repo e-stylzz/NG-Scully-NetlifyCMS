@@ -12,13 +12,13 @@ export class ApplyComponent implements OnInit {
   jobId = this.route.snapshot.paramMap.get('slug');
   jobRoute = '/jobs/' + this.jobId;
 
-  // job$ = this.srs.available$.pipe(
-  //   map((routeList) =>
-  //     routeList.filter((route: ScullyRoute) =>
-  //       route.route.startsWith(this.jobRoute)
-  //     )
-  //   )
-  // );
+  job$ = this.srs.available$.pipe(
+    map((routeList) =>
+      routeList.filter((route: ScullyRoute) =>
+        route.route.startsWith(this.jobRoute)
+      )
+    )
+  );
 
   constructor(
     private route: ActivatedRoute,

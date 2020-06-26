@@ -10,5 +10,16 @@ export const config: ScullyConfig = {
         folder: './jobs',
       },
     },
+    // '/jobs/apply/:slug': {
+    //   type: 'contentFolder',
+    //   slug: {
+    //     folder: './jobs',
+    //   },
+    // },
   },
+  extraRoutes: [
+    '/jobs/apply/test1',
+    '/jobs/apply/busa-bus-dover-de',
+    '/jobs/apply/map-location-houston-tx-overview-layin-down-beats-position-beat-master-requirements-no-scrum-responsibilities-keeping-it-real-status-active',
+  ],
 };
