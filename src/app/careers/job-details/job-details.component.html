@@ -4,4 +4,8 @@
   <h4>Location: {{ job.location }}</h4>
   <br />
   <scully-content></scully-content>
+
+  <button mat-raised-button color="primary" (click)="apply(job.slug)">
+    Primary
+  </button>
 </div>

@@ -31,4 +31,12 @@ export class JobDetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  apply(id) {
+    console.log('slug', id);
+
+    let path = '/jobs/apply/' + this.jobId;
+    console.log('path: ', path);
+    this.router.navigate([path]);
+  }
 }
