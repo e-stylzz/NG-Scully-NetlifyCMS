@@ -8,10 +8,15 @@
       <label>Your Email: <input type="email" name="email" /></label>
     </p>
     <p>
-      <label>Job: <input type="text" name="job" /></label>
+      <label
+        >Job: <input type="text" name="job" [value]="jobId" readonly
+      /></label>
     </p>
     <p>
       <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <label>Resume: <input type="file" name="resume" /></label>
     </p>
     <p>
       <button type="submit">Apply</button>

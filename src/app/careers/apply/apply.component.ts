@@ -25,5 +25,8 @@ export class ApplyComponent implements OnInit {
     private srs: ScullyRoutesService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('jobId: ', this.jobId);
+    console.log('this.jobRoute: ', this.jobRoute);
+  }
 }
