@@ -1,9 +1,9 @@
 ---
 location: Houston, TX
-overview: Layin down beats
-position: Beat Master
+overview: Chilling
+position: Coder
 requirements: No Scrum
-responsibilities: Keeping it real
+responsibilities: Having fuin
 status: Active
 ---
 Do stuff and such.  Maybe do some other things.  Great job...
