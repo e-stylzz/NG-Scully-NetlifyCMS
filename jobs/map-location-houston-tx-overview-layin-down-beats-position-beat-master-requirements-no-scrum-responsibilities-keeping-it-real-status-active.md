@@ -2,7 +2,7 @@
 location: Denver, CO
 overview: Chilling
 position: Coder
-requirements: No Scrum
+requirements: "12 years of Angular 10 experience.  "
 responsibilities: Having fuin
 status: Active
 ---
