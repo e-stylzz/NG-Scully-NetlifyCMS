@@ -1,5 +1,5 @@
 ---
-location: Houston, TX
+location: Denver, CO
 overview: Chilling
 position: Coder
 requirements: No Scrum
