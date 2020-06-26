@@ -1,6 +1,12 @@
 <div *ngFor="let job of job$ | async">
   {{ job | json }}
-  <form name="contact" method="POST" data-netlify="true" action="/">
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    action="/"
+    enctype="multipart/form-data"
+  >
     <p>
       <label>Your Name: <input type="text" name="name" /></label>
     </p>
