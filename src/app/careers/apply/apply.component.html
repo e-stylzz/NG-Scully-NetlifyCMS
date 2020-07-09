@@ -1,7 +1,7 @@
 <div *ngFor="let job of job$ | async">
   {{ job | json }}
   <form
-    name="contact"
+    name="application"
     method="POST"
     data-netlify="true"
     action="/"
@@ -25,9 +25,9 @@
       <label>Resume: <input type="file" name="resume" /></label>
     </p>
     <p>
-      <button type="submit">Apply</button>
+      <button type="submit">Submit</button>
     </p>
 
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="form-name" value="application" />
   </form>
 </div>
